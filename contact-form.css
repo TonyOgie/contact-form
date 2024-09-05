@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Karla;
+}
+
+body{
+    margin: 50px;
+    background-color: hsl(148, 38%, 91%)
+}
+
+#main-body{
+   background-color: white;
+   width: 31.25rem;
+   height: auto;
+   padding: 30px;
+   border-radius: 15px;
+   margin: auto;
+}
+
+h1 {
+    font-weight: 700;
+    background-color: white;
+    color: hsl(169, 82%, 27%)
+}
+
+.email-section,
+.message-section{
+    margin-bottom: 15px;
+}
+
+.first-part{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.mail,
+textarea{
+ width: 27.8rem;
+ padding: 10px;
+ margin-top: 5px;
+ border: 1px solid hsl(148, 38%, 91%);
+ border-radius: 7px;  
+ outline: none;
+}
+
+.first,
+.last{
+    width: 12.5rem;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid hsl(148, 38%, 91%);
+    border-radius: 7px;
+    outline: none;
+}
+
+.first{
+    margin-right: 20px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.query{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.radio-group{
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(148, 38%, 91%);
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 12.5rem;
+}
+
+.radio-group:first-child{
+    margin-right: 20px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.consent-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.consent-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.btn{
+    text-align: center;
+}
+
+.submit-btn{
+ width:27.8rem;
+ padding: 10px;
+ margin-top: 5px;
+ border: 1px solid hsl(0, 47%, 12%);
+ border-radius: 7px;  
+ background-color: hsl(0, 66%, 54%);
+ color: white;
+}
+
+form :hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-part,
+.query{
+    flex-direction: column;
+}
+
+.mail,
+textarea {
+    width: 100%;
+}
+}

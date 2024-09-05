@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,500;1,500&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="contact-form.css"> 
+  <title>Frontend Mentor | Contact form</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+  
+  
+
+  <div id="main-body">
+    
+      <h1> Contact Us</h1>
+
+    <form>
+      <section class="first-part">
+         <div class="first-name">
+           <p>First Name  *</p>
+           <input class="first" type="text" name="userFirstName" required>
+            <!--This field is required -->
+         </div>
+
+         <div class="last-name">
+           <p>Last Name  *</p>
+           <input class="last" type="text" name="userLastName" required>
+           <!--This field is required -->
+          </div>
+      </section>
+
+      <section class="email-section">
+        <div class="email">
+         <p>Email Address  *</p>
+         <input class="mail" type="email" name="userEmail" required>
+         <!--Please enter a valid email address
+         This field is required -->
+        </div>
+      </section>
+
+     <section class="query-section">
+       <p class="query-type">Query Type  *</p> 
+       <div class="query">
+        <div class="radio-group">
+         <input class="general" type="radio" name="query-type" value="general-enquiry"  required>
+         <label for="general-enquiry"> General Enquiry</label>
+         </div>
+         <div class="radio-group">
+          <input class="support" type="radio" value="Support Request" required>
+          <label for="support-request"> Support Request</label>
+          </div>
+         <!--
+          Please select a query type -->
+       </div>
+      </section>
+
+      <section class="message-section">
+        <div class="message">    
+         <p>Message   *</p>
+         <textarea name="userMessage" rows="5" cols="50"></textarea>
+         <!--This field is required -->
+        </div>
+      </section>
+
+      <section class="consent">
+        <div class="consent-group">
+          <input type="checkbox" name="consent-box">
+          <label for="consent-to-contact">I consent to being contacted by the team  *</label>
+        </div>
+        <!--To submit this form, please consent to being contacted-->
+      </section>
+
+      <section class="submit">
+        <div class="btn">
+          <button class="submit-btn">Submit</button>
+        </div>
+
+      </section>
+     <!-- <label class="alert">Message Sent!
+     Thanks for completing the form. We'll be in touch soon!</label> -->
+     </form>
+  </div>
+</body>
+  <!--
+   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+   </div> -->
+  
+</html>
