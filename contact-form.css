@@ -119,22 +119,17 @@ form :hover{
 }
 
 @media only screen and (max-width: 767px) {
- body{
-    margin: auto;
- }
+    #main-body{
+        width: 17.125rem;
+    }
+    
+    .first-part,
+    .query{
+        flex-direction: column;
+    }
 
-/*.first-part,
-.query{
-    flex-direction: column;
-}
-
-.mail,
-textarea {
-    width: 100%;
-}
-
-#main-body{
-    display: flex;
-    flex-direction: column;
-} */
+    .mail,
+    textarea{
+        width: 12.5rem;
+    }
 }
