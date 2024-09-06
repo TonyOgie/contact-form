@@ -26,72 +26,70 @@
     
       <h1> Contact Us</h1>
 
-    <form>
+    <form id="contact-form">
       <section class="first-part">
          <div class="first-name">
-           <p>First Name  *</p>
-           <input class="first" type="text" name="userFirstName" required>
-            <!--This field is required -->
+           <label for="first">First Name  *</label>
+           <input id="first" type="text" name="userFirstName" required>
+            <p id="firsterror">This field is required</p>
          </div>
 
          <div class="last-name">
-           <p>Last Name  *</p>
-           <input class="last" type="text" name="userLastName" required>
-           <!--This field is required -->
+           <label for="last">Last Name  *</label>
+           <input id="last" type="text" name="userLastName" required>
+           <p id="lasterror">This field is required</p>
           </div>
       </section>
 
       <section class="email-section">
         <div class="email">
-         <p>Email Address  *</p>
-         <input class="mail" type="email" name="userEmail" required>
-         <!--Please enter a valid email address
-         This field is required -->
+         <label for="mail">Email Address  *</label>
+         <input id="mail" type="email" name="userEmail" required>
+        <p id="emailerror">Please enter a valid email address</p>
         </div>
       </section>
 
      <section class="query-section">
-       <p class="query-type">Query Type  *</p> 
+       <label class="query-type" for="general">Query Type  *</label> 
        <div class="query">
         <div class="radio-group">
-         <input class="general" type="radio" name="query-type" value="general-enquiry"  required>
-         <label for="general-enquiry"> General Enquiry</label>
+         <input id="general" type="radio" name="queryType" value="general-enquiry" required>
+         <label for="general"> General Enquiry</label>
          </div>
          <div class="radio-group">
-          <input class="support" type="radio" value="Support Request" required>
-          <label for="support-request"> Support Request</label>
+          <input id="support" type="radio" name="queryType" value="Support-Request" required>
+          <label for="support"> Support Request</label>
           </div>
-         <!--
-          Please select a query type -->
        </div>
+       <p id="query-error">This field is required</p>
       </section>
 
       <section class="message-section">
         <div class="message">    
-         <p>Message   *</p>
-         <textarea name="userMessage" rows="3"></textarea>
-         <!--This field is required -->
+         <label for="message-area">Message   *</label>
+         <textarea name="userMessage" rows="3" id="message-area" required></textarea>
+         <p id="messageError">This field is required</p>
         </div>
       </section>
 
       <section class="consent">
         <div class="consent-group">
-          <input type="checkbox" name="consent-box">
-          <label for="consent-to-contact">I consent to being contacted by the team  *</label>
+          <input type="checkbox" name="consent-box" id="consent-box" required>
+          <label for="consent-box">I consent to being contacted by the team  *</label>
         </div>
-        <!--To submit this form, please consent to being contacted-->
+        <p id="consent-error">To submit this form, please consent to being contacted</p>
       </section>
 
       <section class="submit">
         <div class="btn">
-          <button class="submit-btn">Submit</button>
+          <button type="submit" id="submit-btn">Submit</button>
         </div>
 
       </section>
-     <!-- <label class="alert">Message Sent!
-     Thanks for completing the form. We'll be in touch soon!</label> -->
+    
      </form>
   </div>
+  <script src="./form.js" defer></script>
 </body>
   <!--
    <div class="attribution">
